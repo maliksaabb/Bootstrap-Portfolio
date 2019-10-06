@@ -1,129 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BOOTSTRAP PORTFOLIO</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        .container {
-    width: 70%;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin:15px;
-    padding-bottom:30px;
-    margin-right: auto;
-    margin-left: auto; 
-    background-color: white;}
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-    body {
-      background-image: url(images/concrete_seamless.png);
-    }
-    
-    h1 { color:#4aaaa5 ;
-        margin:10px;
-        font-family: 'Times New Roman', Times, serif}
-
-       a1 {  background-color: #4aaaa5;
-      margin-left:60px;
-      padding:60px;
-      height:45px;
-      
-    }
-      hr{ height:10px;}
-
-      p {
-          margin:-18px;
-          padding-top: 0px;
-          color:gray;}
-      footer {
-            text-align: center;
-            background-color:#343a40;
-            margin-top:50px;
-            width: 100%;
-            margin-bottom:auto;
-            border-top:4px solid #4aaaa5;
-      }
-      
-
-          
-         
-     </style>
+	<link rel="icon" type="image/x-icon" href="assets/img/malik.png">
+	<meta name="author" content="Usman Malik">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a1 class="navbar-brand" href="#">Malik Usman Khan</a1>
-                
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    
-                  </ul>
-                </div>
-                
-                      
-              </nav>
-              </div>
-              
-              </div>
-              <div class="container">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="page-header">
-                          <h1>About Me</h1>
-                        </div>
-                        <hr>
-                        <div class="row">
-                          <div class="col-md-6">
-                          <img src="https://pbs.twimg.com/profile_images/1159210288798994432/m0pILVH1_400x400.jpg" alt="placeholder" class="img-thumbnail">
-                         
-                          </div>
-                          <div class="col-md-6">
-                                <p>
-                                  <br>Hey and welcome to my portfolio! My name is Malik and i moved to Richmond,VA last year.
-                                  Originally coming from an Engineering background I'm excited to learn the ins and outs of being
-                                   a full stack devloper and dream of using  my skills to help others in the future.
-                                  I spent my school and high school years in Pakistan which is my Hometown as well and then i moved to China to 
-                                  get Undergraduate Education I spent 4 years there graduating as a Petroleum engineering undergrad student.
-                                  As i have a lot of friends who belong to 
-                                  web developing field always had me in touch with it. Now that i'm here and i saw alot of opportunities in this
-                                  growing field makes me want to learn about this field.</br>
-                                  <br>My interest for coding & development began in college. Although, I'm still interested
-                                  in My Petroleum Engineering field, I learned it wasn't something I could do forever with a very specific and tight job market. I'm
-                                  excited to hone my skills in the coming months and be able to show off cool projects here on Github. Cheers!
-                                </br>
-                                </p>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+			<!--	<a href="http://medium.com/@hassanhelfi/" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-medium"></i> -->
+					</span>
+				</a>
+				<a href="https://github.com/maliksaabb" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<a href="https://twitter.com/Maliksaaabb" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-twitter"></i>
+					</span>
+				</a>				
+			</div>
 
-                              </div>
-                              </div>
-                            </div>
-                          </div>
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div>
 
-                        </div>
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/0.jpg">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					Hey and welcome to my portfolio! I'm Malik and I'm from Richmond,VA. Originally coming from an Engineering background I'm excited to learn the ins and outs of being a full stack developer. Although, I'm still interested in My Petroleum Engineering field, I learned it wasn't something I could do forever with a very specific and tight job market. So,I'm excited to hone my skills in the coming months and be able to show and learn real life projects in the web development field. Cheers!
+				</p>
+			</div>
+		</section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/project-1.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										 Project: <a href="https://vin-cent321.github.io/Project-Divelop/">Divelop</a>
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/project-2.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										Project: <a href=" https://maliksaabb.github.io/Word-Guess-Game/">Country-Guess-Game</a>
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-
-                              <footer class="footer text-muted">
-                                <div class="container-fluid p-1 p-md-3">
-
-                                  <a class="navbar-footer" >copyright © Usman Malik</a>
-                                </div>
-                              </footer>
-                             
-                              
-                              
-                        
-                                  
-</body>
-
+		<!-- Social -->
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Let's Socialize</h3>
+				</div>
+				<div class="social-container columns">
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.linkedin.com/in/usman-malik-1b137393/"><img class="" src="https://img.icons8.com/plasticine/2x/linkedin.png"></a>
+					</div>
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.instagram.com/maliksaabb/"><img class="" src="https://www.searchpng.com/wp-content/uploads/2018/12/Splash-Instagraam-Icon-Png-715x715.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>	
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<!-- <a href="http://www.hassanali.me/about">Hassan Ali</a> -->&copy; @Malik
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
 </html>
